@@ -26,7 +26,7 @@ demon_kys = "0"
 It uses XOR to decrypt the file, then base64-decodes and decompresses it with GZIP to get readable data. After modifying the values, it compresses, encodes, and re-encrypts the data to restore the original format.
 
 Here it customizes the chest's contents, you can change this to other ingame currencies aswell.
-```
+```py
 def mod():
     data          = open(xml_path, "r", encoding="utf-8").read()
 
